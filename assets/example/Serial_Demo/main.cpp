@@ -14,7 +14,7 @@ int main()
 {
     try {
         // 1. 初始化串口 (设备路径, 波特率, 数据位, 奇偶校验)
-        Serial::Serial my_serial("/dev/ttyS1", B115200, CS8, false);
+        Serial::Serial my_serial("/dev/ttyACM0", B115200, CS8, false);
         std::string input;
 
 
