@@ -66,5 +66,7 @@ ffplay -f v4l2 -i /dev/video0  # 播放摄像头
 ```
 
 ## 效果图
-![效果图片1](./assets/整体效果.jpg "BittleCoCo")
+- 上位机：`RDK X5`
+- 下位机：`BiBoard V1.0`
+![效果图片1](./assets/overview.jpg "BittleCoCo")
 
