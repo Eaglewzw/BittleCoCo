@@ -14,7 +14,7 @@ int main()
 {
     try {
         // 1. 初始化串口 (设备路径, 波特率, 数据位, 奇偶校验)
-        Serial::Serial my_serial("/dev/ttyUSB0", B115200, CS8, false);
+        Serial::Serial my_serial("/dev/ttyS1", B115200, CS8, false);
         std::string input;
 
 
@@ -41,14 +41,7 @@ int main()
             // 等待数据到达
             std::this_thread::sleep_for(std::chrono::milliseconds(50));
             
-            // 5. 等待并接收数据edm
-            // std::vector<uint8_t> received_data = my_serial.receive(256);  // 接收5字节
-            // std::cout << "接收到 " << received_data.size() << " 字节数据: ";
-            // for (auto byte : received_data) {
-            //     std::cout << byte << " ";
-            // }
-            // std::cout << std::endl;
-            
+            // 5. 等待并接收数据
             // 按行读取
             std::string line = my_serial.readline();
             std::cout << "接收到一行: " << line << std::endl;
