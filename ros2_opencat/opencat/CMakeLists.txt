@@ -11,10 +11,32 @@ find_package(rclpy REQUIRED)
 find_package(opencat_msgs REQUIRED)
 
 
+# 关键修改：添加依赖导出
+ament_export_dependencies(opencat_msgs)
+
+# 包含目录设置
+include_directories(
+  include
+  ${ament_INCLUDE_DIRS}
+  ${opencat_msgs_INCLUDE_DIRS}  # 添加这行
+)
+
+
+
 # 配置Python安装
 ament_python_install_package(${PROJECT_NAME}
   PACKAGE_DIR src/${PROJECT_NAME}
 )
+
+
+# 关键添加：导出头文件目录
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
+# 关键添加：导出包含目录
+ament_export_include_directories(include)
 
 
 

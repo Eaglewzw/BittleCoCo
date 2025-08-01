@@ -1,16 +1,23 @@
 /**
  * @brief opencat header
  * @file
- * @author C.C
- * @date 2022.05.24
+ * @author Verse
+ * @date 2025.08.01
+ * @version 1.0
  **/
 #ifndef OPENCAT_H_
 #define OPENCAT_H_
-#include "opencat_msgs/base_task.h"
-#include "ros/ros.h"
+
+
+#include "opencat_msgs/srv/base_task.hpp"
+#include "rclcpp/rclcpp.hpp"
 #include <cstdint>
 #include <vector>
-using opencat_msgs::base_task;
+#include <chrono>
+
+
+using opencat_msgs::srv::BaseTask;  
+using namespace std::chrono_literals;  // for using 1s, etc.
 using std::vector;
 
 namespace OpenCat
@@ -89,38 +96,50 @@ struct Task
     float delay;
 };
 
-class ServiceClient
+class ServiceClient : public rclcpp::Node  // 必须明确继承
 {
-  public:
-    ServiceClient()
-        : node_handler(), send_task(node_handler.serviceClient<base_task>(
-                              "opencat_send_task")){};
-    /**
-     * @brief send task by calling service
-     * @param task: %Task to send
-     **/
-    void SendTask(const Task &task)
-    {
-        static base_task srv;
-        srv.request.cmd = task.cmd;
-        srv.request.delay = task.delay;
-        srv.request.arguments = task.arguments;
-        send_task.call(srv);
-    };
+    public:
+        ServiceClient() 
+            : rclcpp::Node("opencat_service_client")
+        {
+            // 创建服务客户端
+            client_ = this->create_client<opencat_msgs::srv::BaseTask>("opencat_send_task");
+            
+            // 等待服务可用
+            while (!client_->wait_for_service(std::chrono::seconds(1))) {
+                if (!rclcpp::ok()) {
+                    RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for service.");
+                    return;
+                }
+                RCLCPP_INFO(this->get_logger(), "Service not available, waiting again...");
+            }
+        }
 
-    /**
-     * @brief send multiple tasks
-     * @param tasks: %vector of %task
-     **/
-    void SendMultipleTasks(const vector<Task> &tasks)
-    {
-        for (auto &task : tasks)
-            this->SendTask(task);
-    };
+        /**
+        * @brief send task by calling service
+        * @param task: %Task to send
+        **/
+        void SendTask(const Task &task)
+        {
+            // static BaseTask srv;
+            // srv.request.cmd = task.cmd;
+            // srv.request.delay = task.delay;
+            // srv.request.arguments = task.arguments;
+            // send_task.call(srv);
+        };
 
-  protected:
-    ros::NodeHandle node_handler;
-    ros::ServiceClient send_task;
+        /**
+        * @brief send multiple tasks
+        * @param tasks: %vector of %task
+        **/
+        void SendMultipleTasks(const vector<Task> &tasks)
+        {
+            for (auto &task : tasks)
+                this->SendTask(task);
+        };
+
+    private:
+        rclcpp::Client<opencat_msgs::srv::BaseTask>::SharedPtr client_;
 };
 } // namespace OpenCat
 

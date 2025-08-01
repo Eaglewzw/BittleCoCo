@@ -1,8 +1,9 @@
 /**
- * @brief source file for opencat_serial lib
+ * @brief opencat header
  * @file
- * @author C.C
- * @date 2022.05.22
+ * @author Verse
+ * @date 2025.08.01
+ * @version 1.0
  **/
 #include "opencat_serial/opencat_serial.hpp"
 #include "opencat/opencat_data.hpp"

@@ -1,7 +1,9 @@
 /**
- * @brief unimportant data for opencat lib
- * @author C.C
- * @date 2022.05.23
+ * @brief opencat header
+ * @file
+ * @author Verse
+ * @date 2025.08.01
+ * @version 1.0
  **/
 #ifndef OPENCAT_SERIAL_DATA_H_
 #define OPENCAT_SERIAL_DATA_H_

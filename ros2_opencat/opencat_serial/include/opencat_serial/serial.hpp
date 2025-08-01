@@ -1,8 +1,9 @@
 /**
- * @brief a basic serial C++ wrapper for linux
+ * @brief opencat header
  * @file
- * @author C.C
- * @date 2022.05.22
+ * @author Verse
+ * @date 2025.08.01
+ * @version 1.0
  **/
 #ifndef SERIAL_H_
 #define SERIAL_H_

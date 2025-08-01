@@ -16,7 +16,7 @@ find_package(builtin_interfaces REQUIRED)
 # Service definition
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/BaseTask.srv"
-  DEPENDENCIES std_msgs
+  DEPENDENCIES std_msgs builtin_interfaces
 )
 
 # Standard ROS2 package setup
