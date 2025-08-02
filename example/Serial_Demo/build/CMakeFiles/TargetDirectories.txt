@@ -1,3 +1,0 @@
-/root/ros2_ws/src/example/Serial_Demo/build/CMakeFiles/serial_example.dir
-/root/ros2_ws/src/example/Serial_Demo/build/CMakeFiles/edit_cache.dir
-/root/ros2_ws/src/example/Serial_Demo/build/CMakeFiles/rebuild_cache.dir

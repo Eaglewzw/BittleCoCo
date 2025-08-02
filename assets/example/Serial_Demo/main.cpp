@@ -3,6 +3,13 @@
 #include <chrono>
 #include <thread>
 
+/**
+ * 可将USB串口的TX和RX引脚连接在一起进行回环测试。
+ * 
+ * 
+ * 
+ */
+
 int main() 
 {
     try {
