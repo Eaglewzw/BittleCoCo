@@ -10,7 +10,6 @@
 
 
 #include "opencat/opencat.hpp"
-// #include "serial_driver/serial_driver.hpp"
 #include "serial.hpp"  // Serial class for serial communication
 #include <string>
 #include <vector>
@@ -24,7 +23,7 @@ namespace OpenCat
     * @brief wrapper class to communicate with OpenCat robot
     * @inherit ::Serial::Serial, protected as we don't need to send arbitrary data
     **/
-    class Robot : protected ::serial::Serial
+    class Robot : public :: Serial::Serial
     {
         public:
           /**
