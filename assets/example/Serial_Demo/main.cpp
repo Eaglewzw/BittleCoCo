@@ -18,21 +18,6 @@ int main()
         std::string input;
 
 
-        // std::thread recv_thread([&]() {
-        // // 接收线程：持续监听数据
-        // while (true) {
-        //         std::vector<uint8_t> received_data = my_serial.receive(512); // 最多收1024字节
-        //         if (!received_data.empty()) {
-        //             std::cout << "\n接收到 " << received_data.size() << " 字节数据: ";
-        //             for (auto byte : received_data) {
-        //                 std::cout << static_cast<char>(byte);
-        //             }
-        //             std::cout << std::endl;
-        //         }
-        //         std::this_thread::sleep_for(std::chrono::milliseconds(10)); // 稍作延时防止CPU占用高
-        //     }
-        // });
-
         while(true) {
             // 2. 获取用户输入
             std::cout << "请输入要发送的字符串 (输入exit退出): ";
@@ -53,7 +38,6 @@ int main()
                 std::cout << "发送成功，发送字节数: " << send_result << std::endl;
             }
             
-            // recv_thread.detach(); // 让接收线程独立运行（可改为 join 视需求）
             // 等待数据到达
             std::this_thread::sleep_for(std::chrono::milliseconds(50));
             

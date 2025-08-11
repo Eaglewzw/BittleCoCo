@@ -77,7 +77,6 @@ std::vector<uint8_t> Serial::receive(size_t bytes)
     assert(bytes <= sizeof(read_buf));
 
     ssize_t n = read(serial_dev, read_buf, bytes);
-    std::cout << "Read " << n << " bytes from serial." << std::endl;
     if (n > 0) {
         return std::vector<uint8_t>(read_buf, read_buf + n);
     } else if (n == 0) {
