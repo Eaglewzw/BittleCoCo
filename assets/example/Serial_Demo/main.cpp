@@ -57,7 +57,7 @@ int main()
             // 等待数据到达
             std::this_thread::sleep_for(std::chrono::milliseconds(50));
             
-            // 5. 等待并接收数据
+            // 5. 等待并接收数据edm
             // std::vector<uint8_t> received_data = my_serial.receive(256);  // 接收5字节
             // std::cout << "接收到 " << received_data.size() << " 字节数据: ";
             // for (auto byte : received_data) {
