@@ -27,7 +27,7 @@ class Serial
 {
   protected:
     int serial_dev;
-    uint8_t read_buf[256];
+    uint8_t read_buf[1024];
     termios tty;
 
   public:
@@ -58,6 +58,8 @@ class Serial
      * @return string read
      **/
     std::string readline();
+
+
 };
 } // namespace Serial
 

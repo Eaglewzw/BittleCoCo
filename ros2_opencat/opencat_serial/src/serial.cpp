@@ -68,12 +68,21 @@ namespace Serial
         return write(serial_dev, &msg[0], msg.size());
     }
 
-    vector<uint8_t> Serial::receive(size_t bytes)
+    std::vector<uint8_t> Serial::receive(size_t bytes) 
     {
         assert(bytes <= sizeof(read_buf));
-        read(serial_dev, read_buf, bytes);
-        return vector<uint8_t>{read_buf, read_buf + bytes};
+
+        ssize_t n = read(serial_dev, read_buf, bytes);
+        if (n > 0) {
+            return std::vector<uint8_t>(read_buf, read_buf + n);
+        } else if (n == 0) {
+            return {}; // 没有数据
+        } else {
+            perror("read error"); // 出错
+            return {};
+        }
     }
+
 
     std::string Serial::readline()
     {

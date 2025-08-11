@@ -50,6 +50,9 @@ Serial::Serial(string serial_port, speed_t baud_rate, tcflag_t data_bits,
     tty.c_oflag &=
         ~ONLCR; // Prevent conversion of newline to carriage return/line feed
 
+    // 禁用回显和其他控制字符处理
+    tty.c_lflag &= ~(ECHO | ECHONL | ISIG | IEXTEN);
+
     // Wait for up to 1s (10 deciseconds), returning as soon as any data is
     // received.
     tty.c_cc[VTIME] = 100;
@@ -68,11 +71,25 @@ int Serial::send(const vector<uint8_t> &msg)
     return write(serial_dev, &msg[0], msg.size());
 }
 
-vector<uint8_t> Serial::receive(size_t bytes)
+
+std::vector<uint8_t> Serial::receive(size_t bytes) 
 {
     assert(bytes <= sizeof(read_buf));
-    read(serial_dev, read_buf, bytes);
-    return vector<uint8_t>{read_buf, read_buf + bytes};
+
+    ssize_t n = read(serial_dev, read_buf, bytes);
+    std::cout << "Read " << n << " bytes from serial." << std::endl;
+    if (n > 0) {
+        return std::vector<uint8_t>(read_buf, read_buf + n);
+    } else if (n == 0) {
+        return {}; // 没有数据
+    } else {
+        perror("read error"); // 出错
+        return {};
+    }
+    // assert(bytes <= sizeof(read_buf));
+    // memset(read_buf, 0, sizeof(read_buf));  // 清空缓冲区
+    // read(serial_dev, read_buf, bytes);
+    // return vector<uint8_t>{read_buf, read_buf + bytes};
 }
 
 std::string Serial::readline()
