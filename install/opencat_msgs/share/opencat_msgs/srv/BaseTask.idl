@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from opencat_msgs/srv/BaseTask.srv
+// generated code does not contain a copyright notice
+
+
+module opencat_msgs {
+  module srv {
+    struct BaseTask_Request {
+      uint8 cmd;
+
+      sequence<int16> arguments;
+
+      float delay;
+    };
+    struct BaseTask_Response {
+      boolean res;
+    };
+  };
+};

@@ -21,7 +21,7 @@ class HelloWorld : public rclcpp::Node
     private:
         void timer_callback() 
         {
-            RCLCPP_INFO(this->get_logger(), "say_something_node say: Hello world");
+            RCLCPP_INFO(this->get_logger(), "Hello, OpenCat!");
         }
 
         rclcpp::TimerBase::SharedPtr timer_;

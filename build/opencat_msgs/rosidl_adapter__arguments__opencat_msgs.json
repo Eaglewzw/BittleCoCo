@@ -1,0 +1,6 @@
+{
+  "package_name": "opencat_msgs",
+  "non_idl_tuples": [
+    "/root/ros2_ws/src/ros2_opencat/opencat_msgs:srv/BaseTask.srv"
+  ]
+}

@@ -1,0 +1,6 @@
+setup.py
+opencat_msgs/__init__.py
+opencat_msgs.egg-info/PKG-INFO
+opencat_msgs.egg-info/SOURCES.txt
+opencat_msgs.egg-info/dependency_links.txt
+opencat_msgs.egg-info/top_level.txt

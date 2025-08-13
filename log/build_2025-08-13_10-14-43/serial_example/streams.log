@@ -1,0 +1,27 @@
+[0.079s] Invoking command in '/root/ros2_ws/src/build/serial_example': /usr/bin/cmake /root/ros2_ws/src/assets/example/Serial_Demo -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/serial_example
+[0.381s] -- The C compiler identification is GNU 11.2.0
+[0.721s] -- The CXX compiler identification is GNU 11.2.0
+[0.755s] -- Detecting C compiler ABI info
+[1.138s] -- Detecting C compiler ABI info - done
+[1.184s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.185s] -- Detecting C compile features
+[1.187s] -- Detecting C compile features - done
+[1.203s] -- Detecting CXX compiler ABI info
+[1.650s] -- Detecting CXX compiler ABI info - done
+[1.699s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.701s] -- Detecting CXX compile features
+[1.703s] -- Detecting CXX compile features - done
+[1.707s] -- Configuring done
+[1.724s] -- Generating done
+[1.733s] -- Build files have been written to: /root/ros2_ws/src/build/serial_example
+[1.757s] Invoked command in '/root/ros2_ws/src/build/serial_example' returned '0': /usr/bin/cmake /root/ros2_ws/src/assets/example/Serial_Demo -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/serial_example
+[1.767s] Invoking command in '/root/ros2_ws/src/build/serial_example': /usr/bin/cmake --build /root/ros2_ws/src/build/serial_example -- -j8 -l8
+[1.982s] [ 16%] [32mBuilding CXX object CMakeFiles/serial_example.dir/main.cpp.o[0m
+[1.988s] [ 33%] [32mBuilding CXX object CMakeFiles/serial_example.dir/serial.cpp.o[0m
+[1.994s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_send.dir/hello_send.cpp.o[0m
+[2.002s] [ 66%] [32mBuilding CXX object CMakeFiles/hello_send.dir/serial.cpp.o[0m
+[4.380s] [ 83%] [32m[1mLinking CXX executable hello_send[0m
+[4.451s] [100%] [32m[1mLinking CXX executable serial_example[0m
+[4.865s] [100%] Built target hello_send
+[4.938s] [100%] Built target serial_example
+[4.993s] Invoked command in '/root/ros2_ws/src/build/serial_example' returned '0': /usr/bin/cmake --build /root/ros2_ws/src/build/serial_example -- -j8 -l8

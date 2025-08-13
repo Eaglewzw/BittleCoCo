@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cdb3519f6859aaf056f7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "opencat_msgs__py",
+					"jsonFile" : "directory-opencat_msgs__py-44962acfbaf4eeb1740a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/root/ros2_ws/src/build/opencat_msgs/opencat_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "opencat_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_opencat_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_opencat_msgs_egg-7858b06767392b80f3bc.json",
+					"name" : "ament_cmake_python_build_opencat_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_opencat_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_opencat_msgs-a97ad4ae874b13937382.json",
+					"name" : "ament_cmake_python_copy_opencat_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs-73126d07c3a8c1f53816.json",
+					"name" : "opencat_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__cpp-f05780c542d4d8e53165.json",
+					"name" : "opencat_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "opencat_msgs__py::@92ad1ddd03148e1c4091",
+					"jsonFile" : "target-opencat_msgs__py-a572782e92185a4d01ee.json",
+					"name" : "opencat_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_generator_c-8fe0c251deb21b543b19.json",
+					"name" : "opencat_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_generator_py-eabac74d3c5cac48b2e1.json",
+					"name" : "opencat_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_c-22ef1bd7d8cef4b3fcb7.json",
+					"name" : "opencat_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_c__pyext-69155c423cbe4b1d0e90.json",
+					"name" : "opencat_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_cpp-ac1d77435650f057f6c3.json",
+					"name" : "opencat_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_fastrtps_c-3e480dd71e583cc3a78e.json",
+					"name" : "opencat_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_fastrtps_c__pyext-8c73db1c067b4a29b009.json",
+					"name" : "opencat_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_fastrtps_cpp-ca70632d0e506d4b8392.json",
+					"name" : "opencat_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_introspection_c-1d4566fdea1bfa61ce95.json",
+					"name" : "opencat_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_introspection_c__pyext-5faf987bb772097ff76f.json",
+					"name" : "opencat_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs__rosidl_typesupport_introspection_cpp-64df3231e3d2cdfa7a5e.json",
+					"name" : "opencat_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "opencat_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencat_msgs_uninstall-b00233446e2387526fcd.json",
+					"name" : "opencat_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e30922254efcacbec14f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/ros2_ws/src/build/opencat_msgs",
+		"source" : "/root/ros2_ws/src/ros2_opencat/opencat_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

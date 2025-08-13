@@ -2,41 +2,27 @@
 
 # Skills Reference
 
-## Posture Skills
-| Abbreviation | Skill Name                  |
-|--------------|-----------------------------|
-| balance      | stand up neutral            |
-| buttUp       | butt up                     |
-| calib        | calibration pose            |
-| dropped      | dropped by back legs        |
-| lifted       | lifted by neck              |
-| ind          | landing pose                |
-| rest         | rest                        |
-| sit          | sit                         |
-| str          | stretch                     |
-| up           | stand up neutral (= balance)|
-| zero         | all joint at 0 degrees      |
+## Posture and Gait Skills
 
-## Gait Skills
-| Abbreviation | Skill Name          |
-|--------------|---------------------|
-| bdf          | bound forward       |
-| bk           | backward            |
-| bkL          | backward Left       |
-| crF          | crawl Forward       |
-| crL          | crawl Left          |
-| gpF          | gap Forward         |
-| gpL          | gap Left            |
-| hhw          | halloween gait      |
-| jpF          | jump Forward        |
-| phF          | push Forward        |
-| phL          | push Left           |
-| trF          | trot Forward        |
-| trL          | trot Left           |
-| vtF          | step at origin      |
-| vtL          | sping left          |
-| wkF          | walk Forward        |
-| wkL          | walk Left           |
+| Posture Skills            | Gait Skills                |
+|---------------------------|---------------------------|
+| **balance**: stand up neutral            | **bdf**: bound forward       |
+| **buttUp**: butt up                     | **bk**: backward            |
+| **calib**: calibration pose             | **bkL**: backward Left      |
+| **dropped**: dropped by back legs       | **crF**: crawl Forward      |
+| **lifted**: lifted by neck              | **crL**: crawl Left         |
+| **ind**: landing pose                  | **gpF**: gap Forward        |
+| **rest**: rest                          | **gpL**: gap Left           |
+| **sit**: sit                            | **hhw**: halloween gait     |
+| **str**: stretch                        | **jpF**: jump Forward       |
+| **up**: stand up neutral (= balance)    | **phF**: push Forward       |
+| **zero**: all joint at 0 degrees        | **phL**: push Left          |
+|                           | **trF**: trot Forward       |
+|                           | **trL**: trot Left          |
+|                           | **vtF**: step at origin     |
+|                           | **vtL**: sping left         |
+|                           | **wkF**: walk Forward       |
+|                           | **wkL**: walk Left          |
 
 ## Behavior Skills
 | Abbreviation | Skill Name                  |

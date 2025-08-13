@@ -1,0 +1,4 @@
+source;share/opencat_serial/local_setup.bash
+source;share/opencat_serial/local_setup.dsv
+source;share/opencat_serial/local_setup.sh
+source;share/opencat_serial/local_setup.zsh

@@ -1,0 +1,232 @@
+[0.094s] Invoking command in '/root/ros2_ws/src/build/opencat_msgs': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/ros2_opencat/opencat_msgs -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/opencat_msgs
+[0.414s] -- The C compiler identification is GNU 11.2.0
+[0.751s] -- The CXX compiler identification is GNU 11.2.0
+[0.784s] -- Detecting C compiler ABI info
+[1.173s] -- Detecting C compiler ABI info - done
+[1.221s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.222s] -- Detecting C compile features
+[1.224s] -- Detecting C compile features - done
+[1.239s] -- Detecting CXX compiler ABI info
+[1.664s] -- Detecting CXX compiler ABI info - done
+[1.712s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.713s] -- Detecting CXX compile features
+[1.716s] -- Detecting CXX compile features - done
+[1.724s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.901s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.566s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.600s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.613s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.837s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.034s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[6.201s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[7.685s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.724s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.889s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[9.897s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[10.081s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[10.083s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[10.083s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[10.084s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[10.232s] -- Found PythonExtra: .so  
+[10.622s] -- Configuring done
+[10.812s] -- Generating done
+[10.887s] -- Build files have been written to: /root/ros2_ws/src/build/opencat_msgs
+[10.931s] Invoked command in '/root/ros2_ws/src/build/opencat_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/ros2_opencat/opencat_msgs -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/opencat_msgs
+[10.936s] Invoking command in '/root/ros2_ws/src/build/opencat_msgs': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/build/opencat_msgs -- -j8 -l8
+[11.111s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[11.171s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.201s] [  6%] Built target ament_cmake_python_copy_opencat_msgs
+[12.988s] running egg_info
+[12.994s] creating opencat_msgs.egg-info
+[12.995s] writing opencat_msgs.egg-info/PKG-INFO
+[12.996s] writing dependency_links to opencat_msgs.egg-info/dependency_links.txt
+[12.997s] writing top-level names to opencat_msgs.egg-info/top_level.txt
+[12.999s] writing manifest file 'opencat_msgs.egg-info/SOURCES.txt'
+[13.011s] reading manifest file 'opencat_msgs.egg-info/SOURCES.txt'
+[13.015s] writing manifest file 'opencat_msgs.egg-info/SOURCES.txt'
+[13.271s] [  6%] Built target ament_cmake_python_build_opencat_msgs_egg
+[13.447s] [  6%] Built target opencat_msgs__cpp
+[13.465s] [  9%] [32mBuilding C object CMakeFiles/opencat_msgs__rosidl_generator_c.dir/rosidl_generator_c/opencat_msgs/srv/detail/base_task__functions.c.o[0m
+[13.495s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[13.497s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.498s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.908s] [ 22%] [32m[1mLinking C shared library libopencat_msgs__rosidl_generator_c.so[0m
+[14.140s] [ 22%] Built target opencat_msgs__rosidl_generator_c
+[14.211s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[14.214s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.216s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.591s] [ 35%] [32mBuilding CXX object CMakeFiles/opencat_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opencat_msgs/srv/detail/base_task__type_support.cpp.o[0m
+[15.973s] [ 38%] [32mBuilding CXX object CMakeFiles/opencat_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opencat_msgs/srv/base_task__type_support.cpp.o[0m
+[16.021s] [ 41%] [32mBuilding CXX object CMakeFiles/opencat_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opencat_msgs/srv/detail/dds_fastrtps/base_task__type_support.cpp.o[0m
+[16.716s] [ 45%] [32mBuilding CXX object CMakeFiles/opencat_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opencat_msgs/srv/base_task__type_support.cpp.o[0m
+[16.953s] [ 48%] [32mBuilding CXX object CMakeFiles/opencat_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opencat_msgs/srv/detail/base_task__type_support_c.cpp.o[0m
+[17.166s] [ 51%] [32m[1mLinking CXX shared library libopencat_msgs__rosidl_typesupport_c.so[0m
+[17.273s] [ 54%] [32mBuilding C object CMakeFiles/opencat_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opencat_msgs/srv/detail/base_task__type_support.c.o[0m
+[17.582s] [ 54%] Built target opencat_msgs__rosidl_typesupport_c
+[17.666s] [ 58%] [32m[1mLinking C shared library libopencat_msgs__rosidl_typesupport_introspection_c.so[0m
+[18.069s] [ 58%] Built target opencat_msgs__rosidl_typesupport_introspection_c
+[18.304s] [ 61%] [32m[1mLinking CXX shared library libopencat_msgs__rosidl_typesupport_cpp.so[0m
+[18.581s] [ 61%] Built target opencat_msgs__rosidl_typesupport_cpp
+[18.809s] [ 64%] [32m[1mLinking CXX shared library libopencat_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[19.326s] [ 64%] Built target opencat_msgs__rosidl_typesupport_introspection_cpp
+[19.649s] [ 67%] [32m[1mLinking CXX shared library libopencat_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[20.138s] [ 67%] Built target opencat_msgs__rosidl_typesupport_fastrtps_cpp
+[20.667s] [ 70%] [32m[1mLinking CXX shared library libopencat_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[21.176s] [ 70%] Built target opencat_msgs__rosidl_typesupport_fastrtps_c
+[21.271s] [ 70%] Built target opencat_msgs
+[21.367s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[24.116s] [ 74%] Built target opencat_msgs__py
+[24.208s] [ 77%] [32mBuilding C object CMakeFiles/opencat_msgs__rosidl_generator_py.dir/rosidl_generator_py/opencat_msgs/srv/_base_task_s.c.o[0m
+[25.040s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/opencat_msgs/libopencat_msgs__rosidl_generator_py.so[0m
+[25.290s] [ 80%] Built target opencat_msgs__rosidl_generator_py
+[25.383s] [ 83%] [32mBuilding C object CMakeFiles/opencat_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/opencat_msgs/_opencat_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[25.391s] [ 87%] [32mBuilding C object CMakeFiles/opencat_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/opencat_msgs/_opencat_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[25.401s] [ 90%] [32mBuilding C object CMakeFiles/opencat_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/opencat_msgs/_opencat_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.017s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/opencat_msgs/opencat_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[26.030s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/opencat_msgs/opencat_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[26.052s] [100%] [32m[1mLinking C shared library rosidl_generator_py/opencat_msgs/opencat_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[26.280s] [100%] Built target opencat_msgs__rosidl_typesupport_fastrtps_c__pyext
+[26.298s] [100%] Built target opencat_msgs__rosidl_typesupport_c__pyext
+[26.319s] [100%] Built target opencat_msgs__rosidl_typesupport_introspection_c__pyext
+[26.375s] Invoked command in '/root/ros2_ws/src/build/opencat_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/build/opencat_msgs -- -j8 -l8
+[26.423s] Invoking command in '/root/ros2_ws/src/build/opencat_msgs': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/build/opencat_msgs
+[26.461s] -- Install configuration: ""
+[26.461s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/ament_index/resource_index/rosidl_interfaces/opencat_msgs
+[26.462s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs
+[26.463s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv
+[26.464s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail
+[26.464s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__functions.h
+[26.465s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__struct.h
+[26.466s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__type_support.h
+[26.467s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__functions.c
+[26.467s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/base_task.h
+[26.468s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg
+[26.469s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg/rosidl_generator_c__visibility_control.h
+[26.469s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/library_path.sh
+[26.470s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/library_path.dsv
+[26.471s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_generator_c.so
+[26.472s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_generator_c.so" to ""
+[26.473s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs
+[26.474s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv
+[26.475s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail
+[26.476s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__rosidl_typesupport_fastrtps_c.h
+[26.478s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg
+[26.479s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[26.480s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_fastrtps_c.so
+[26.481s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[26.481s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs
+[26.482s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv
+[26.483s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail
+[26.484s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__type_support.c
+[26.485s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__rosidl_typesupport_introspection_c.h
+[26.485s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg
+[26.486s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[26.487s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_introspection_c.so
+[26.488s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_introspection_c.so" to ""
+[26.489s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_c.so
+[26.489s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_c.so" to ""
+[26.494s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs
+[26.495s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv
+[26.495s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail
+[26.496s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__builder.hpp
+[26.497s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__type_support.hpp
+[26.497s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__traits.hpp
+[26.498s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__struct.hpp
+[26.499s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/base_task.hpp
+[26.499s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg
+[26.500s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[26.501s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs
+[26.502s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv
+[26.503s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail
+[26.504s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/dds_fastrtps
+[26.504s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__rosidl_typesupport_fastrtps_cpp.hpp
+[26.505s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg
+[26.506s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[26.507s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_fastrtps_cpp.so
+[26.507s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[26.508s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs
+[26.509s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv
+[26.510s] -- Up-to-date: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail
+[26.511s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__type_support.cpp
+[26.511s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/include/opencat_msgs/opencat_msgs/srv/detail/base_task__rosidl_typesupport_introspection_cpp.hpp
+[26.512s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_introspection_cpp.so
+[26.513s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[26.513s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_cpp.so
+[26.514s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_typesupport_cpp.so" to ""
+[26.514s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/pythonpath.sh
+[26.515s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/pythonpath.dsv
+[26.516s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs-0.0.0-py3.10.egg-info
+[26.516s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[26.517s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[26.518s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[26.518s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[26.519s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs
+[26.520s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/_opencat_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[26.521s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[26.521s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/_opencat_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[26.522s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/srv
+[26.523s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/srv/_base_task.py
+[26.524s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/srv/_base_task_s.c
+[26.524s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/srv/__init__.py
+[26.525s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[26.526s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/__init__.py
+[26.527s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/_opencat_msgs_s.ep.rosidl_typesupport_c.c
+[26.527s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[26.528s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/libopencat_msgs__rosidl_generator_py.so
+[26.744s] Listing '/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs'...
+[26.745s] Compiling '/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/__init__.py'...
+[26.745s] Listing '/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/srv'...
+[26.746s] Compiling '/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/srv/__init__.py'...
+[26.747s] Compiling '/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/srv/_base_task.py'...
+[26.796s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[26.797s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[26.798s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[26.800s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[26.801s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[26.802s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/local/lib/python3.10/dist-packages/opencat_msgs/opencat_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[26.803s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_generator_py.so
+[26.805s] -- Set runtime path of "/root/ros2_ws/src/install/opencat_msgs/lib/libopencat_msgs__rosidl_generator_py.so" to ""
+[26.805s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/srv/BaseTask.idl
+[26.806s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/srv/BaseTask.srv
+[26.807s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/srv/BaseTask_Request.msg
+[26.808s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/srv/BaseTask_Response.msg
+[26.809s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/ament_index/resource_index/package_run_dependencies/opencat_msgs
+[26.810s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/ament_index/resource_index/parent_prefix_path/opencat_msgs
+[26.811s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/ament_prefix_path.sh
+[26.811s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/ament_prefix_path.dsv
+[26.812s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/path.sh
+[26.813s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/environment/path.dsv
+[26.814s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/local_setup.bash
+[26.815s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/local_setup.sh
+[26.816s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/local_setup.zsh
+[26.816s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/local_setup.dsv
+[26.817s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/package.dsv
+[26.818s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/ament_index/resource_index/packages/opencat_msgs
+[26.819s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_generator_cExport.cmake
+[26.820s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_generator_cExport-noconfig.cmake
+[26.821s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[26.822s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[26.822s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_introspection_cExport.cmake
+[26.823s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[26.824s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_cExport.cmake
+[26.825s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[26.826s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_generator_cppExport.cmake
+[26.826s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[26.827s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[26.828s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[26.829s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[26.830s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_cppExport.cmake
+[26.831s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[26.832s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_generator_pyExport.cmake
+[26.833s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/export_opencat_msgs__rosidl_generator_pyExport-noconfig.cmake
+[26.834s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/rosidl_cmake-extras.cmake
+[26.834s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.835s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.836s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[26.837s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[26.838s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[26.839s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[26.840s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgsConfig.cmake
+[26.841s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/cmake/opencat_msgsConfig-version.cmake
+[26.842s] -- Installing: /root/ros2_ws/src/install/opencat_msgs/share/opencat_msgs/package.xml
+[26.853s] Invoked command in '/root/ros2_ws/src/build/opencat_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/build/opencat_msgs

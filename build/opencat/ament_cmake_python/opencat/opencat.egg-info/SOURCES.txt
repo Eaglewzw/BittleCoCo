@@ -1,0 +1,7 @@
+setup.py
+opencat/__init__.py
+opencat/roscat.py
+opencat.egg-info/PKG-INFO
+opencat.egg-info/SOURCES.txt
+opencat.egg-info/dependency_links.txt
+opencat.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "opencat_msgs__py",
+		"source" : "/root/ros2_ws/src/build/opencat_msgs/opencat_msgs__py"
+	}
+}

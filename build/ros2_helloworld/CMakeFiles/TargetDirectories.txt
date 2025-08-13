@@ -1,0 +1,10 @@
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/uninstall.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/ros2_helloworld_uninstall.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/ros2_helloworld.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/test.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/edit_cache.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/rebuild_cache.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/list_install_components.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/install.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/install/local.dir
+/root/ros2_ws/src/build/ros2_helloworld/CMakeFiles/install/strip.dir
