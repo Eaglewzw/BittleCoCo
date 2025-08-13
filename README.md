@@ -27,8 +27,6 @@
 
 ## Behavior Skills
 
-## Behavior Skills
-
 | Abbreviation | Skill Description     | Abbreviation | Skill Description     | Abbreviation | Skill Description     | Abbreviation | Skill Description     |
 |--------------|-----------------------|--------------|-----------------------|--------------|-----------------------|--------------|-----------------------|
 | **ang**      | angry                 | **bf**       | backflip              | **bx**       | boxing                | **chr**      | cheers                |
