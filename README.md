@@ -26,42 +26,19 @@
 |                                 | **wkL** : walk Left         |
 
 ## Behavior Skills
+
 ## Behavior Skills
 
-| Abbreviation | Skill Description                  |
-|--------------|------------------------------------|
-| **ang**      | angry                              |
-| **bf**       | backflip                           |
-| **bx**       | boxing                             |
-| **chr**      | cheers                             |
-| **ck**       | check                              |
-| **cmh**      | come here                          |
-| **dg**       | dig                                |
-| **ff**       | front flip                         |
-| **fiv**      | high five                          |
-| **gdb**      | good boy                           |
-| **hds**      | handstand                          |
-| **hg**       | hug                                |
-| **hi**       | hi                                 |
-| **hsk**      | hand shake                         |
-| **hu**       | hands up                           |
-| **jmp**      | jump                               |
-| **kc**       | kick                               |
-| **lpow**     | leap over                          |
-| **mw**       | moon walk                          |
-| **nd**       | nod                                |
-| **pd**       | play dead                          |
-| **pee**      | pee                                |
-| **pu**       | push ups                           |
-| **pu1**      | push ups (one hand)                |
-| **rc**       | recover                            |
-| **rl**       | roll                               |
-| **scrh**     | scratch                            |
-| **snf**      | sniff                              |
-| **tbl**      | be table                           |
-| **ts**       | test                               |
-| **wh**       | wave head                          |
-| **zz**       | all joints at 0°                   |
+| Abbreviation | Skill Description     | Abbreviation | Skill Description     | Abbreviation | Skill Description     | Abbreviation | Skill Description     |
+|--------------|-----------------------|--------------|-----------------------|--------------|-----------------------|--------------|-----------------------|
+| **ang**      | angry                 | **bf**       | backflip              | **bx**       | boxing                | **chr**      | cheers                |
+| **ck**       | check                 | **cmh**      | come here             | **dg**       | dig                   | **ff**       | front flip            |
+| **fiv**      | high five             | **gdb**      | good boy              | **hds**      | handstand             | **hg**       | hug                   |
+| **hi**       | hi                    | **hsk**      | hand shake            | **hu**       | hands up              | **jmp**      | jump                  |
+| **kc**       | kick                  | **lpow**     | leap over             | **mw**       | moon walk             | **nd**       | nod                   |
+| **pd**       | play dead             | **pee**      | pee                   | **pu**       | push ups              | **pu1**      | one-hand push         |
+| **rc**       | recover               | **rl**       | roll                  | **scrh**     | scratch               | **snf**      | sniff                 |
+| **tbl**      | be table              | **ts**       | test                  | **wh**       | wave head             | **zz**       | 0° reset              |
 
 ## Direction Suffixes
 When calling a skill, you may specify its direction by adding a suffix:
