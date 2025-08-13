@@ -4,61 +4,64 @@
 
 ## Posture and Gait Skills
 
-| Posture Skills            | Gait Skills                |
-|---------------------------|---------------------------|
-| **balance**: stand up neutral            | **bdf**: bound forward       |
-| **buttUp**: butt up                     | **bk**: backward            |
-| **calib**: calibration pose             | **bkL**: backward Left      |
-| **dropped**: dropped by back legs       | **crF**: crawl Forward      |
-| **lifted**: lifted by neck              | **crL**: crawl Left         |
-| **ind**: landing pose                  | **gpF**: gap Forward        |
-| **rest**: rest                          | **gpL**: gap Left           |
-| **sit**: sit                            | **hhw**: halloween gait     |
-| **str**: stretch                        | **jpF**: jump Forward       |
-| **up**: stand up neutral (= balance)    | **phF**: push Forward       |
-| **zero**: all joint at 0 degrees        | **phL**: push Left          |
-|                           | **trF**: trot Forward       |
-|                           | **trL**: trot Left          |
-|                           | **vtF**: step at origin     |
-|                           | **vtL**: sping left         |
-|                           | **wkF**: walk Forward       |
-|                           | **wkL**: walk Left          |
+
+| Posture Skills                  | Gait Skills                  |
+|---------------------------------|------------------------------|
+| **balance** : stand up neutral  | **bdf** : bound forward      |
+| **buttUp** : butt up            | **bk** : backward            |
+| **calib** : calibration pose    | **bkL** : backward Left      |
+| **dropped** : dropped by legs   | **crF** : crawl Forward     |
+| **lifted** : lifted by neck     | **crL** : crawl Left        |
+| **ind** : landing pose          | **gpF** : gap Forward       |
+| **rest** : rest                 | **gpL** : gap Left          |
+| **sit** : sit                   | **hhw** : halloween gait    |
+| **str** : stretch               | **jpF** : jump Forward      |
+| **up** : stand up (= balance)   | **phF** : push Forward      |
+| **zero** : all joints at 0°     | **phL** : push Left         |
+|                                 | **trF** : trot Forward      |
+|                                 | **trL** : trot Left         |
+|                                 | **vtF** : step at origin    |
+|                                 | **vtL** : spin left         |
+|                                 | **wkF** : walk Forward      |
+|                                 | **wkL** : walk Left         |
 
 ## Behavior Skills
-| Abbreviation | Skill Name                  |
-|--------------|-----------------------------|
-| ang          | angry                       |
-| bf           | backflip                    |
-| bx           | boxing                      |
-| chr          | cheers                      |
-| ck           | check                       |
-| cmh          | come here                   |
-| dg           | dig                         |
-| ff           | front flip                  |
-| fiv          | high five                   |
-| gdb          | good boy                    |
-| hds          | handstand                   |
-| hg           | hug                         |
-| hi           | hi                          |
-| hsk          | hand shake                  |
-| hu           | hands up                    |
-| jmp          | jump                        |
-| kc           | kick                        |
-| lpow         | leap over                   |
-| mw           | moon walk                   |
-| nd           | nod                         |
-| pd           | play dead                   |
-| pee          | pee                         |
-| pu           | push ups                    |
-| pu1          | push ups with on hand       |
-| rc           | recover                     |
-| rl           | roll                        |
-| scrh         | scratch                     |
-| snf          | sniff                       |
-| tbl          | be table                    |
-| ts           | test                        |
-| wh           | wave head                   |
-| zz           | all joint at 0 degrees      |
+## Behavior Skills
+
+| Abbreviation | Skill Description                  |
+|--------------|------------------------------------|
+| **ang**      | angry                              |
+| **bf**       | backflip                           |
+| **bx**       | boxing                             |
+| **chr**      | cheers                             |
+| **ck**       | check                              |
+| **cmh**      | come here                          |
+| **dg**       | dig                                |
+| **ff**       | front flip                         |
+| **fiv**      | high five                          |
+| **gdb**      | good boy                           |
+| **hds**      | handstand                          |
+| **hg**       | hug                                |
+| **hi**       | hi                                 |
+| **hsk**      | hand shake                         |
+| **hu**       | hands up                           |
+| **jmp**      | jump                               |
+| **kc**       | kick                               |
+| **lpow**     | leap over                          |
+| **mw**       | moon walk                          |
+| **nd**       | nod                                |
+| **pd**       | play dead                          |
+| **pee**      | pee                                |
+| **pu**       | push ups                           |
+| **pu1**      | push ups (one hand)                |
+| **rc**       | recover                            |
+| **rl**       | roll                               |
+| **scrh**     | scratch                            |
+| **snf**      | sniff                              |
+| **tbl**      | be table                           |
+| **ts**       | test                               |
+| **wh**       | wave head                          |
+| **zz**       | all joints at 0°                   |
 
 ## Direction Suffixes
 When calling a skill, you may specify its direction by adding a suffix:
