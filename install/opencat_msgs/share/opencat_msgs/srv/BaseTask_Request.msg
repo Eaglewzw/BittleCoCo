@@ -1,3 +1,0 @@
-uint8 cmd
-int16[] arguments
-float32 delay

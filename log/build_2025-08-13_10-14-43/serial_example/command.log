@@ -1,4 +1,0 @@
-Invoking command in '/root/ros2_ws/src/build/serial_example': /usr/bin/cmake /root/ros2_ws/src/assets/example/Serial_Demo -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/serial_example
-Invoked command in '/root/ros2_ws/src/build/serial_example' returned '0': /usr/bin/cmake /root/ros2_ws/src/assets/example/Serial_Demo -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/serial_example
-Invoking command in '/root/ros2_ws/src/build/serial_example': /usr/bin/cmake --build /root/ros2_ws/src/build/serial_example -- -j8 -l8
-Invoked command in '/root/ros2_ws/src/build/serial_example' returned '0': /usr/bin/cmake --build /root/ros2_ws/src/build/serial_example -- -j8 -l8

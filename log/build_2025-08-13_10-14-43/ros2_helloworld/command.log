@@ -1,6 +1,0 @@
-Invoking command in '/root/ros2_ws/src/build/ros2_helloworld': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/ros2_helloworld -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/ros2_helloworld
-Invoked command in '/root/ros2_ws/src/build/ros2_helloworld' returned '0': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/ros2_helloworld -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/src/install/ros2_helloworld
-Invoking command in '/root/ros2_ws/src/build/ros2_helloworld': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/build/ros2_helloworld -- -j8 -l8
-Invoked command in '/root/ros2_ws/src/build/ros2_helloworld' returned '0': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/build/ros2_helloworld -- -j8 -l8
-Invoking command in '/root/ros2_ws/src/build/ros2_helloworld': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/build/ros2_helloworld
-Invoked command in '/root/ros2_ws/src/build/ros2_helloworld' returned '0': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/build/ros2_helloworld

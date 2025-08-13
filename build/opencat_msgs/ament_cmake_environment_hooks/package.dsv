@@ -1,4 +1,0 @@
-source;share/opencat_msgs/local_setup.bash
-source;share/opencat_msgs/local_setup.dsv
-source;share/opencat_msgs/local_setup.sh
-source;share/opencat_msgs/local_setup.zsh

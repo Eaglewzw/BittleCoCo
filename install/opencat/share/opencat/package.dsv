@@ -1,8 +1,0 @@
-source;share/opencat/hook/cmake_prefix_path.ps1
-source;share/opencat/hook/cmake_prefix_path.dsv
-source;share/opencat/hook/cmake_prefix_path.sh
-source;share/opencat/local_setup.bash
-source;share/opencat/local_setup.dsv
-source;share/opencat/local_setup.ps1
-source;share/opencat/local_setup.sh
-source;share/opencat/local_setup.zsh
