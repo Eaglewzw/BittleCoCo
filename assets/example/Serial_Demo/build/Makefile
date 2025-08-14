@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
 # Target rules for targets named serial_example
 
 # Build rule for target.
@@ -129,49 +142,12 @@ serial_example/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/build
 .PHONY : serial_example/fast
 
-#=============================================================================
-# Target rules for targets named hello_send
-
-# Build rule for target.
-hello_send: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_send
-.PHONY : hello_send
-
-# fast build rule for target.
-hello_send/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_send.dir/build.make CMakeFiles/hello_send.dir/build
-.PHONY : hello_send/fast
-
-hello_send.o: hello_send.cpp.o
-.PHONY : hello_send.o
-
-# target to build an object file
-hello_send.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_send.dir/build.make CMakeFiles/hello_send.dir/hello_send.cpp.o
-.PHONY : hello_send.cpp.o
-
-hello_send.i: hello_send.cpp.i
-.PHONY : hello_send.i
-
-# target to preprocess a source file
-hello_send.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_send.dir/build.make CMakeFiles/hello_send.dir/hello_send.cpp.i
-.PHONY : hello_send.cpp.i
-
-hello_send.s: hello_send.cpp.s
-.PHONY : hello_send.s
-
-# target to generate assembly for a file
-hello_send.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_send.dir/build.make CMakeFiles/hello_send.dir/hello_send.cpp.s
-.PHONY : hello_send.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -179,7 +155,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -187,16 +163,40 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+opencat_serial.o: opencat_serial.cpp.o
+.PHONY : opencat_serial.o
+
+# target to build an object file
+opencat_serial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/opencat_serial.cpp.o
+.PHONY : opencat_serial.cpp.o
+
+opencat_serial.i: opencat_serial.cpp.i
+.PHONY : opencat_serial.i
+
+# target to preprocess a source file
+opencat_serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/opencat_serial.cpp.i
+.PHONY : opencat_serial.cpp.i
+
+opencat_serial.s: opencat_serial.cpp.s
+.PHONY : opencat_serial.s
+
+# target to generate assembly for a file
+opencat_serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/opencat_serial.cpp.s
+.PHONY : opencat_serial.cpp.s
 
 serial.o: serial.cpp.o
 .PHONY : serial.o
 
 # target to build an object file
 serial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/serial.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/serial.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_send.dir/build.make CMakeFiles/hello_send.dir/serial.cpp.o
 .PHONY : serial.cpp.o
 
 serial.i: serial.cpp.i
@@ -204,8 +204,8 @@ serial.i: serial.cpp.i
 
 # target to preprocess a source file
 serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/serial.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/serial.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_send.dir/build.make CMakeFiles/hello_send.dir/serial.cpp.i
 .PHONY : serial.cpp.i
 
 serial.s: serial.cpp.s
@@ -213,9 +213,33 @@ serial.s: serial.cpp.s
 
 # target to generate assembly for a file
 serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/serial.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/serial.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_send.dir/build.make CMakeFiles/hello_send.dir/serial.cpp.s
 .PHONY : serial.cpp.s
+
+serial_example.o: serial_example.cpp.o
+.PHONY : serial_example.o
+
+# target to build an object file
+serial_example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/serial_example.cpp.o
+.PHONY : serial_example.cpp.o
+
+serial_example.i: serial_example.cpp.i
+.PHONY : serial_example.i
+
+# target to preprocess a source file
+serial_example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/serial_example.cpp.i
+.PHONY : serial_example.cpp.i
+
+serial_example.s: serial_example.cpp.s
+.PHONY : serial_example.s
+
+# target to generate assembly for a file
+serial_example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_example.dir/build.make CMakeFiles/serial_example.dir/serial_example.cpp.s
+.PHONY : serial_example.cpp.s
 
 # Help Target
 help:
@@ -225,17 +249,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello_send"
+	@echo "... main"
 	@echo "... serial_example"
-	@echo "... hello_send.o"
-	@echo "... hello_send.i"
-	@echo "... hello_send.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... opencat_serial.o"
+	@echo "... opencat_serial.i"
+	@echo "... opencat_serial.s"
 	@echo "... serial.o"
 	@echo "... serial.i"
 	@echo "... serial.s"
+	@echo "... serial_example.o"
+	@echo "... serial_example.i"
+	@echo "... serial_example.s"
 .PHONY : help
 
 

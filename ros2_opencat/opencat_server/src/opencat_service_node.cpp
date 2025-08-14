@@ -17,7 +17,8 @@ int main(int argc, char *argv[])
     {
         std::cout << port << std::endl;
     }
-    OpenCat::ROSRobot rosbot(serial_ports[0]);
+    // OpenCat::ROSRobot rosbot(serial_ports[0]);
+    OpenCat::ROSRobot rosbot("/dev/ttyACM0");
 
     rclcpp::init(argc, argv);
     std::shared_ptr<rclcpp::Node> node =

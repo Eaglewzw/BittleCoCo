@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/serial_example.dir/main.cpp.o"
-  "CMakeFiles/serial_example.dir/main.cpp.o.d"
+  "CMakeFiles/serial_example.dir/opencat_serial.cpp.o"
+  "CMakeFiles/serial_example.dir/opencat_serial.cpp.o.d"
   "CMakeFiles/serial_example.dir/serial.cpp.o"
   "CMakeFiles/serial_example.dir/serial.cpp.o.d"
+  "CMakeFiles/serial_example.dir/serial_example.cpp.o"
+  "CMakeFiles/serial_example.dir/serial_example.cpp.o.d"
   "serial_example"
   "serial_example.pdb"
 )

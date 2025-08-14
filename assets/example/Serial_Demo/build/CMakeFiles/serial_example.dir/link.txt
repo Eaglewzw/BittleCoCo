@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/serial_example.dir/serial.cpp.o CMakeFiles/serial_example.dir/main.cpp.o -o serial_example  -lpthread 
+/usr/bin/c++ CMakeFiles/serial_example.dir/serial.cpp.o CMakeFiles/serial_example.dir/opencat_serial.cpp.o CMakeFiles/serial_example.dir/serial_example.cpp.o -o serial_example  -lpthread 

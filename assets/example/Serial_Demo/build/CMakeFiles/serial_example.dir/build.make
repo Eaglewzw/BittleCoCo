@@ -83,33 +83,49 @@ CMakeFiles/serial_example.dir/serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial_example.dir/serial.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ros2_ws/src/assets/example/Serial_Demo/serial.cpp -o CMakeFiles/serial_example.dir/serial.cpp.s
 
-CMakeFiles/serial_example.dir/main.cpp.o: CMakeFiles/serial_example.dir/flags.make
-CMakeFiles/serial_example.dir/main.cpp.o: ../main.cpp
-CMakeFiles/serial_example.dir/main.cpp.o: CMakeFiles/serial_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ros2_ws/src/assets/example/Serial_Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/serial_example.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serial_example.dir/main.cpp.o -MF CMakeFiles/serial_example.dir/main.cpp.o.d -o CMakeFiles/serial_example.dir/main.cpp.o -c /root/ros2_ws/src/assets/example/Serial_Demo/main.cpp
+CMakeFiles/serial_example.dir/opencat_serial.cpp.o: CMakeFiles/serial_example.dir/flags.make
+CMakeFiles/serial_example.dir/opencat_serial.cpp.o: ../opencat_serial.cpp
+CMakeFiles/serial_example.dir/opencat_serial.cpp.o: CMakeFiles/serial_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ros2_ws/src/assets/example/Serial_Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/serial_example.dir/opencat_serial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serial_example.dir/opencat_serial.cpp.o -MF CMakeFiles/serial_example.dir/opencat_serial.cpp.o.d -o CMakeFiles/serial_example.dir/opencat_serial.cpp.o -c /root/ros2_ws/src/assets/example/Serial_Demo/opencat_serial.cpp
 
-CMakeFiles/serial_example.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial_example.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ros2_ws/src/assets/example/Serial_Demo/main.cpp > CMakeFiles/serial_example.dir/main.cpp.i
+CMakeFiles/serial_example.dir/opencat_serial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial_example.dir/opencat_serial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ros2_ws/src/assets/example/Serial_Demo/opencat_serial.cpp > CMakeFiles/serial_example.dir/opencat_serial.cpp.i
 
-CMakeFiles/serial_example.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial_example.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ros2_ws/src/assets/example/Serial_Demo/main.cpp -o CMakeFiles/serial_example.dir/main.cpp.s
+CMakeFiles/serial_example.dir/opencat_serial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial_example.dir/opencat_serial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ros2_ws/src/assets/example/Serial_Demo/opencat_serial.cpp -o CMakeFiles/serial_example.dir/opencat_serial.cpp.s
+
+CMakeFiles/serial_example.dir/serial_example.cpp.o: CMakeFiles/serial_example.dir/flags.make
+CMakeFiles/serial_example.dir/serial_example.cpp.o: ../serial_example.cpp
+CMakeFiles/serial_example.dir/serial_example.cpp.o: CMakeFiles/serial_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ros2_ws/src/assets/example/Serial_Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/serial_example.dir/serial_example.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serial_example.dir/serial_example.cpp.o -MF CMakeFiles/serial_example.dir/serial_example.cpp.o.d -o CMakeFiles/serial_example.dir/serial_example.cpp.o -c /root/ros2_ws/src/assets/example/Serial_Demo/serial_example.cpp
+
+CMakeFiles/serial_example.dir/serial_example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial_example.dir/serial_example.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ros2_ws/src/assets/example/Serial_Demo/serial_example.cpp > CMakeFiles/serial_example.dir/serial_example.cpp.i
+
+CMakeFiles/serial_example.dir/serial_example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial_example.dir/serial_example.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ros2_ws/src/assets/example/Serial_Demo/serial_example.cpp -o CMakeFiles/serial_example.dir/serial_example.cpp.s
 
 # Object files for target serial_example
 serial_example_OBJECTS = \
 "CMakeFiles/serial_example.dir/serial.cpp.o" \
-"CMakeFiles/serial_example.dir/main.cpp.o"
+"CMakeFiles/serial_example.dir/opencat_serial.cpp.o" \
+"CMakeFiles/serial_example.dir/serial_example.cpp.o"
 
 # External object files for target serial_example
 serial_example_EXTERNAL_OBJECTS =
 
 serial_example: CMakeFiles/serial_example.dir/serial.cpp.o
-serial_example: CMakeFiles/serial_example.dir/main.cpp.o
+serial_example: CMakeFiles/serial_example.dir/opencat_serial.cpp.o
+serial_example: CMakeFiles/serial_example.dir/serial_example.cpp.o
 serial_example: CMakeFiles/serial_example.dir/build.make
 serial_example: CMakeFiles/serial_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ros2_ws/src/assets/example/Serial_Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable serial_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ros2_ws/src/assets/example/Serial_Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable serial_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serial_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
