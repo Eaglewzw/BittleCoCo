@@ -5,7 +5,7 @@
  * @date 2025.08.01
  * @version 1.0
  **/
-#include "serial.hpp"
+#include "opencat_serial/serial.hpp"
 #include <cassert>
 
 namespace Serial

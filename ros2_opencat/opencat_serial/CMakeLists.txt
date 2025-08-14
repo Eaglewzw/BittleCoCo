@@ -9,7 +9,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(opencat REQUIRED)
-find_package(serial_driver REQUIRED)  
 find_package(asio_cmake_module REQUIRED)
 find_package(io_context REQUIRED)  # 显式添加io_context
 
@@ -18,26 +17,24 @@ include_directories(
   include
   ${opencat_INCLUDE_DIRS}  # 添加opencat的头文件路径
   ${ament_INCLUDE_DIRS}
-  ${serial_driver_INCLUDE_DIRS}
 )
 
 # 声明库
 add_library(${PROJECT_NAME} SHARED
-  src/${PROJECT_NAME}.cpp
+  src/serial.cpp  # 必须包含实现文件
+  src/opencat_serial.cpp  # 其他源文件
 )
 
 # 链接依赖
 target_link_libraries(${PROJECT_NAME}
   ${rclcpp_LIBRARIES}
   ${opencat_LIBRARIES}
-  ${serial_driver_LIBRARIES}
 )
 
 # 添加依赖
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   opencat
-  serial_driver
   opencat_msgs
 )
 
@@ -57,7 +54,6 @@ install(DIRECTORY include/${PROJECT_NAME}/
 ament_export_dependencies(
   rclcpp
   opencat
-  serial_driver
 )
 
 # 导出包含目录

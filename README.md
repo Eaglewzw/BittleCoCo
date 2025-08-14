@@ -54,12 +54,15 @@ float32 delay
 bool res
 ```
 
-## push
+## 常用测试命令
 
 ```bash
 git add .
 git commit -m "first commit"
 git push -u origin main
+
+ffplay -f v4l2 -i /dev/video0  # 播放摄像头
+
 ```
 
 ## 效果图
