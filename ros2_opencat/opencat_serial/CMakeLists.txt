@@ -9,9 +9,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(opencat REQUIRED)
-find_package(asio_cmake_module REQUIRED)
-find_package(io_context REQUIRED)  # 显式添加io_context
-
 # 包含目录
 include_directories(
   include
