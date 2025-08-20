@@ -1,5 +1,3 @@
-#include "gesture_control_node.h"
-
 #include <fstream>
 #include <string>
 #include <sstream>
@@ -8,12 +6,16 @@
 #include <algorithm>
 #include <thread>
 
+#include "gesture_control_node.h"
 
-GestureControlNode::GestureControlNode(): Node("GestureControlNode")
+
+
+
+
+GestureControlNode::GestureControlNode(): Node("GestureControlNode"), rob_("/dev/ttyACM0")  // 在初始化列表中初始化
 {
 
     RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "Gesture Control Node subscribing to AI message topic...");
-
 
     smart_subscription_ =
         this->create_subscription<ai_msgs::msg::PerceptionTargets>(
@@ -40,13 +42,13 @@ void GestureControlNode::gesture_control_loop()
         gesture_ctrl_type_ = static_cast<GestureCtrlType>(gesture_value_);
          switch(gesture_ctrl_type_) {
             case GestureCtrlType::ThumbLeft:
- 
-                std::cout << "Legs relaxed.\n";
+                rob_.SendMotorCommand("m0 60", true);
+                std::cout << "ThumbLeft.\n";
                 break;
                 
             case GestureCtrlType::ThumbRight:
-
-                std::cout << "Left leg shake.\n";
+                rob_.SendMotorCommand("m0 -60", true);
+                std::cout << "ThumbRight.\n";
                 break;
             
             case GestureCtrlType::ThumbUp:
@@ -55,8 +57,8 @@ void GestureControlNode::gesture_control_loop()
                 break;
 
             case GestureCtrlType::Okay:
-         
-                std::cout << "Standing straight.\n";
+                // rob_.SendTask({OpenCat::Command::REST, 2}, true);
+                std::cout << "Standing reset.\n";
                 break;
 
             case GestureCtrlType::Victory:
@@ -67,7 +69,7 @@ void GestureControlNode::gesture_control_loop()
                 
                 
             case GestureCtrlType::None:
-      
+                rob_.SendMotorCommand("m0 0", true);
                 std::cout << "No gesture detected, relaxing legs.\n";
                 break;
 

@@ -9,7 +9,9 @@
 #include "ai_msgs/msg/capture_targets.hpp"
 #include "ai_msgs/msg/perception_targets.hpp"
 
+#include "opencat_serial.hpp"
 
+using namespace OpenCat;
 
 enum class GestureCtrlType 
 {
@@ -42,6 +44,7 @@ class GestureControlNode : public rclcpp::Node
         std::string ai_msg_sub_topic_name_ = "/tros_perc_fusion";
         rclcpp::Subscription<ai_msgs::msg::PerceptionTargets>::SharedPtr smart_subscription_ = nullptr;
 
+        OpenCat::Robot rob_;
 
         std::thread gesture_control_thread_;
         void gesture_control_loop();

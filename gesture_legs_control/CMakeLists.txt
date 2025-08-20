@@ -31,6 +31,8 @@ include_directories(./include/gesture_legs_control/)
 add_executable(gesture_legs_control 
     ./src/main.cpp
     ./src/gesture_control_node.cpp
+    ./src/serial.cpp
+    ./src/opencat_serial.cpp
 
 )
 
