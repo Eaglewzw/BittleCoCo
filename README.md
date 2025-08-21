@@ -44,6 +44,12 @@ When calling a skill, you may specify its direction by adding a suffix:
 - `-R`: right (mirrored from left)
 - `-X`: random direction
 
+
+![效果图片1](./assets/image.avif "串口控制命令表")
+
+
+
+
 ## server
 ```bash
 root@ubuntu:~/ros2_ws# ros2 interface show opencat_msgs/srv/BaseTask 
@@ -68,5 +74,5 @@ ffplay -f v4l2 -i /dev/video0  # 播放摄像头
 ## 效果图
 - 上位机：`RDK X5`
 - 下位机：`BiBoard V1.0`
-![效果图片1](./assets/overview.jpg "BittleCoCo")
+![效果图片1](./assets/overview.jpg "BittleCoCo整体效果图")
 
