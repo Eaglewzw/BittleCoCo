@@ -23,25 +23,6 @@
 | `Palm` | Open palm | High-five action |
 
 
-## server
-```bash
-root@ubuntu:~/ros2_ws# ros2 interface show opencat_msgs/srv/BaseTask 
-uint8 cmd
-int16[] arguments
-float32 delay
----
-bool res
-```
-
-## 常用测试命令
-
-```bash
-git add .
-git commit -m "first commit"
-git push -u origin main
-ffplay -f v4l2 -i /dev/video0  # 播放摄像头
-```
-
 ## 效果图
 - 上位机：`RDK X5`
 - 下位机：`BiBoard V1.0`
