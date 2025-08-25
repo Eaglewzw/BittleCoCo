@@ -22,6 +22,7 @@ enum class GestureCtrlType
     ThumbRight = 12,  // 大拇指向左
     ThumbLeft = 13,   // 大拇指向右
     Awesome = 14,      // 666手势
+    Mute = 4,
     None = 0,       // 无手势
 };
 

@@ -15,6 +15,7 @@ GestureControlNode::GestureControlNode(): Node("GestureControlNode"), rob_("/dev
 
     rob_.SendMotorCommand("XAd", true);
     rob_.SendMotorCommand("m0 0", true);
+    rob_.SendMotorCommand("krest", true);
 
     smart_subscription_ =
         this->create_subscription<ai_msgs::msg::PerceptionTargets>(
@@ -55,27 +56,34 @@ void GestureControlNode::gesture_control_loop()
                 break;
             
             case GestureCtrlType::ThumbUp:
-                rob_.SendMotorCommand("knod", true);
+                rob_.SendMotorCommand("kgdb", true);
                 std::cout << "Check around.\n";
                 break;
 
             case GestureCtrlType::Okay:
-                rob_.SendTask({OpenCat::Command::BALANCE, 2}, true);
+                rob_.SendTask({OpenCat::Command::SIT, 2}, true);
                 std::cout << "Keep balance.\n";
                 break;
 
             case GestureCtrlType::Victory:
+                rob_.SendMotorCommand("kjmp", true);
                 std::cout << "Greeting action performed.\n";
                 break;
 
 
-            case GestureCtrlType::Awesome:
-                rob_.SendTask({OpenCat::Command::SIT, 2}, true);
-                std::cout << "Greeting action performed.\n";
-                break;
+            // case GestureCtrlType::Awesome:
+            //     rob_.SendTask({OpenCat::Command::SIT, 2}, true);
+            //     std::cout << "Greeting action performed.\n";
+            //     break;
             
-            case GestureCtrlType::Palm:
+            case GestureCtrlType::Mute:
                 rob_.SendMotorCommand("krest", true);
+                std::cout << "kd.\n";
+                break;
+
+
+            case GestureCtrlType::Palm:
+                rob_.SendMotorCommand("kfiv", true);
                 std::cout << "Walking forward.\n";
                 break;
                 
@@ -144,6 +152,7 @@ void GestureControlNode::SmartTopicCallback(const ai_msgs::msg::PerceptionTarget
         
     }
 
+    //剔除其他元素
     // RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "\r\nsize of vector:%d", gesture_value_vector.size());
     for (auto it = gesture_value_vector.begin(); it != gesture_value_vector.end(); ++it) 
     {
@@ -153,6 +162,7 @@ void GestureControlNode::SmartTopicCallback(const ai_msgs::msg::PerceptionTarget
             *it == static_cast<int>(GestureCtrlType::ThumbUp) || 
             *it == static_cast<int>(GestureCtrlType::Victory) || 
             *it == static_cast<int>(GestureCtrlType::Awesome) ||
+            *it == static_cast<int>(GestureCtrlType::Mute) ||
             *it == static_cast<int>(GestureCtrlType::Palm) )
         {
 
