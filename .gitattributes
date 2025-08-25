@@ -1,0 +1,2 @@
+assets/model/SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5.bin filter=lfs diff=lfs merge=lfs -text
+assets/model/SmolVLM2-256M-Video-Instruct-Q8_0.gguf filter=lfs diff=lfs merge=lfs -text
