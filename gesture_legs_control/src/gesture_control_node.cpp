@@ -8,14 +8,13 @@
 
 #include "gesture_control_node.h"
 
-
-
-
-
 GestureControlNode::GestureControlNode(): Node("GestureControlNode"), rob_("/dev/ttyACM0")  // 在初始化列表中初始化
 {
 
     RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "Gesture Control Node subscribing to AI message topic...");
+
+    rob_.SendMotorCommand("XAd", true);
+    rob_.SendMotorCommand("m0 0", true);
 
     smart_subscription_ =
         this->create_subscription<ai_msgs::msg::PerceptionTargets>(
@@ -28,6 +27,8 @@ GestureControlNode::GestureControlNode(): Node("GestureControlNode"), rob_("/dev
     // Start the gesture control loop in a separate thread
     gesture_control_thread_ = std::thread(&GestureControlNode::gesture_control_loop, this); 
     RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "---------------------");
+
+
 }
 
 
@@ -43,34 +44,46 @@ void GestureControlNode::gesture_control_loop()
          switch(gesture_ctrl_type_) {
             case GestureCtrlType::ThumbLeft:
                 rob_.SendMotorCommand("m0 60", true);
-                std::cout << "ThumbLeft.\n";
+                rob_.SendMotorCommand("m0 0", true);
+                std::cout << "Head thumbLeft.\n";
                 break;
                 
             case GestureCtrlType::ThumbRight:
                 rob_.SendMotorCommand("m0 -60", true);
-                std::cout << "ThumbRight.\n";
+                rob_.SendMotorCommand("m0 0", true);
+                std::cout << "Head right.\n";
                 break;
             
             case GestureCtrlType::ThumbUp:
-    
-                std::cout << "Standing straight.\n";
+                rob_.SendMotorCommand("knod", true);
+                std::cout << "Check around.\n";
                 break;
 
             case GestureCtrlType::Okay:
-                // rob_.SendTask({OpenCat::Command::REST, 2}, true);
-                std::cout << "Standing reset.\n";
+                rob_.SendTask({OpenCat::Command::BALANCE, 2}, true);
+                std::cout << "Keep balance.\n";
                 break;
 
             case GestureCtrlType::Victory:
+                std::cout << "Greeting action performed.\n";
+                break;
+
+
             case GestureCtrlType::Awesome:
+                rob_.SendTask({OpenCat::Command::SIT, 2}, true);
+                std::cout << "Greeting action performed.\n";
+                break;
             
-                std::cout << "Push-up action performed.\n";
+            case GestureCtrlType::Palm:
+                rob_.SendMotorCommand("krest", true);
+                std::cout << "Walking forward.\n";
                 break;
                 
                 
             case GestureCtrlType::None:
-                rob_.SendMotorCommand("m0 0", true);
-                std::cout << "No gesture detected, relaxing legs.\n";
+
+                std::cout << "-----opencat reset-----\n";
+                
                 break;
 
             default:
@@ -139,7 +152,8 @@ void GestureControlNode::SmartTopicCallback(const ai_msgs::msg::PerceptionTarget
             *it == static_cast<int>(GestureCtrlType::ThumbRight) || 
             *it == static_cast<int>(GestureCtrlType::ThumbUp) || 
             *it == static_cast<int>(GestureCtrlType::Victory) || 
-            *it == static_cast<int>(GestureCtrlType::Awesome) )
+            *it == static_cast<int>(GestureCtrlType::Awesome) ||
+            *it == static_cast<int>(GestureCtrlType::Palm) )
         {
 
         } else {

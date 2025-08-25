@@ -1,53 +1,15 @@
 # BittleCoCo
 
+# 一些说明
+- colcon build --packages-select package_name
+- （1）开机后自动发送XAd，该指令用于关闭回复音效并禁用反应.
+- （2）开机后自动发送m0 0，该指令用于头部归位.
+- （3）需要开启ros server服务，否则用VLM做的时候无法完成应答模式.
+
+
 # Skills Reference
-
-## Posture and Gait Skills
-
-
-| Posture Skills                  | Gait Skills                  |
-|---------------------------------|------------------------------|
-| **balance** : stand up neutral  | **bdf** : bound forward      |
-| **buttUp** : butt up            | **bk** : backward            |
-| **calib** : calibration pose    | **bkL** : backward Left      |
-| **dropped** : dropped by legs   | **crF** : crawl Forward     |
-| **lifted** : lifted by neck     | **crL** : crawl Left        |
-| **ind** : landing pose          | **gpF** : gap Forward       |
-| **rest** : rest                 | **gpL** : gap Left          |
-| **sit** : sit                   | **hhw** : halloween gait    |
-| **str** : stretch               | **jpF** : jump Forward      |
-| **up** : stand up (= balance)   | **phF** : push Forward      |
-| **zero** : all joints at 0°     | **phL** : push Left         |
-|                                 | **trF** : trot Forward      |
-|                                 | **trL** : trot Left         |
-|                                 | **vtF** : step at origin    |
-|                                 | **vtL** : spin left         |
-|                                 | **wkF** : walk Forward      |
-|                                 | **wkL** : walk Left         |
-
-## Behavior Skills
-
-| Abbreviation | Skill Description     | Abbreviation | Skill Description     | Abbreviation | Skill Description     | Abbreviation | Skill Description     |
-|--------------|-----------------------|--------------|-----------------------|--------------|-----------------------|--------------|-----------------------|
-| **ang**      | angry                 | **bf**       | backflip              | **bx**       | boxing                | **chr**      | cheers                |
-| **ck**       | check                 | **cmh**      | come here             | **dg**       | dig                   | **ff**       | front flip            |
-| **fiv**      | high five             | **gdb**      | good boy              | **hds**      | handstand             | **hg**       | hug                   |
-| **hi**       | hi                    | **hsk**      | hand shake            | **hu**       | hands up              | **jmp**      | jump                  |
-| **kc**       | kick                  | **lpow**     | leap over             | **mw**       | moon walk             | **nd**       | nod                   |
-| **pd**       | play dead             | **pee**      | pee                   | **pu**       | push ups              | **pu1**      | one-hand push         |
-| **rc**       | recover               | **rl**       | roll                  | **scrh**     | scratch               | **snf**      | sniff                 |
-| **tbl**      | be table              | **ts**       | test                  | **wh**       | wave head             | **zz**       | 0° reset              |
-
-## Direction Suffixes
-When calling a skill, you may specify its direction by adding a suffix:
-- `-L`: left
-- `-R`: right (mirrored from left)
-- `-X`: random direction
-
-
 ![效果图片1](./assets/image.avif "串口控制命令表")
-
-
+![效果图片1](./assets/image.png "串口控制命令表")
 
 
 ## server
@@ -66,9 +28,7 @@ bool res
 git add .
 git commit -m "first commit"
 git push -u origin main
-
 ffplay -f v4l2 -i /dev/video0  # 播放摄像头
-
 ```
 
 ## 效果图
