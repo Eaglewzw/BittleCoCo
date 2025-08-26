@@ -17,6 +17,10 @@ int main()
         Serial::Serial my_serial("/dev/ttyACM0", B115200, CS8, false);
         std::string input;
 
+        std::vector<uint8_t> rest_data = {'k','r','e','s','t','\n'};
+        std::vector<uint8_t> xad_data = {'X','A','d','\n'};
+        my_serial.send(xad_data); 
+        my_serial.send(rest_data);
 
         while(true) {
             // 2. 获取用户输入
