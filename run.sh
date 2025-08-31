@@ -1,3 +1,4 @@
+#!/bin/bash
 source /opt/tros/humble/setup.sh
 # 从tros.b的安装路径中拷贝出运行示例需要的配置文件。
 cp -r /opt/tros/humble/lib/mono2d_body_detection/config/ .
