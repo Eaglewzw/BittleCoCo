@@ -37,38 +37,70 @@ GestureControlNode::GestureControlNode(): Node("GestureControlNode"), rob_("/dev
 
 void GestureControlNode::gesture_control_loop()
 {
-    rclcpp::WallRate loop_rate(30);
+    bool okay_flag = false;
+    rclcpp::WallRate loop_rate(15);
+
 
     while (rclcpp::ok())
     {
         gesture_ctrl_type_ = static_cast<GestureCtrlType>(gesture_value_);
+
+
          switch(gesture_ctrl_type_) {
-            case GestureCtrlType::ThumbLeft:
-                rob_.SendMotorCommand("m0 60", true);
-                rob_.SendMotorCommand("m0 0", true);
-                std::cout << "Head thumbLeft.\n";
-                break;
-                
-            case GestureCtrlType::ThumbRight:
-                rob_.SendMotorCommand("m0 -60", true);
-                rob_.SendMotorCommand("m0 0", true);
-                std::cout << "Head right.\n";
-                break;
-            
-            case GestureCtrlType::ThumbUp:
-                rob_.SendMotorCommand("kgdb", true);
-                std::cout << "Check around.\n";
-                break;
+
 
             case GestureCtrlType::Okay:
-                rob_.SendTask({OpenCat::Command::SIT, 2}, true);
-                std::cout << "Keep balance.\n";
-                break;
+                okay_flag = true; 
+                rob_.SendTask({OpenCat::Command::BALANCE, 2}, true); 
+                std::cout << "unlock\n"; 
+         
+               
+            break;
+
+
+            case GestureCtrlType::ThumbLeft:
+                if(okay_flag){
+                    rob_.SendMotorCommand("m0 60", true);
+                    std::cout << "Head thumbLeft.\n"; 
+                    rob_.SendMotorCommand("m0 0", true);
+                    std::cout << "Head back.\n";
+                }else{
+                    std::cout << "lock, wait for okay gesture" << std::endl;
+                }
+            break;
+                
+            case GestureCtrlType::ThumbRight:
+                if(okay_flag){
+                    rob_.SendMotorCommand("m0 -60", true);
+                    std::cout << "Head right.\n";
+                    rob_.SendMotorCommand("m0 0", true);
+                    std::cout << "Head back.\n";
+                }else{
+                    std::cout << "wait for okay gesture" << std::endl;
+
+                }
+            break;
+            
+            case GestureCtrlType::ThumbUp:
+                if(okay_flag){
+                    rob_.SendMotorCommand("kgdb", true);
+                    std::cout << "Check around.\n";
+                }else{
+                    std::cout << "wait for okay gesture" << std::endl;
+
+                }
+            break;
+
+
 
             case GestureCtrlType::Victory:
-                rob_.SendMotorCommand("kjmp", true);
-                std::cout << "Greeting action performed.\n";
-                break;
+                if(okay_flag){
+                    rob_.SendMotorCommand("kjmp", true);
+                    std::cout << "kjmp action performed.\n";
+                }
+                std::cout << "wait for okay gesture" << std::endl;
+
+            break;
 
 
             // case GestureCtrlType::Awesome:
@@ -77,22 +109,25 @@ void GestureControlNode::gesture_control_loop()
             //     break;
             
             case GestureCtrlType::Mute:
+                okay_flag = false;
                 rob_.SendMotorCommand("krest", true);
                 std::cout << "kd.\n";
-                break;
+            break;
 
 
             case GestureCtrlType::Palm:
-                rob_.SendMotorCommand("kfiv", true);
-                std::cout << "Walking forward.\n";
-                break;
+                if(okay_flag){
+                    rob_.SendMotorCommand("khsk", true);
+                    std::cout << "Walking forward.\n";
+                }
+            break;
                 
                 
-            case GestureCtrlType::None:
+            // case GestureCtrlType::None:
 
-                std::cout << "-----opencat reset-----\n";
+            //     std::cout << "-----opencat reset-----\n";
                 
-                break;
+            //     break;
 
             default:
             
@@ -133,13 +168,13 @@ T find_most_frequent_in_queue(std::queue<T> q)
 void GestureControlNode::SmartTopicCallback(const ai_msgs::msg::PerceptionTargets::ConstSharedPtr msg) 
 {
 
-    RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "----------------GestureControlNodeCallback---------------");
+    // RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "----------------GestureControlNodeCallback---------------");
     gesture_value_vector.clear(); // Clear the vector to store new gesture values
     // Process the gesture value from the message
    if (msg->targets.empty()) 
    {
         gesture_value_ = 0;
-        RCLCPP_WARN(rclcpp::get_logger("GestureControlNode"), "Empty targets in gesture message");
+        // RCLCPP_WARN(rclcpp::get_logger("GestureControlNode"), "Empty targets in gesture message");
         return;
     }
     
@@ -180,7 +215,7 @@ void GestureControlNode::SmartTopicCallback(const ai_msgs::msg::PerceptionTarget
 
     gesture_value_ = find_most_frequent_in_queue(gesture_value_queue);
 
-    RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "Gesture value received: %d", gesture_value_);
+    // RCLCPP_INFO(rclcpp::get_logger("GestureControlNode"), "Gesture value received: %d", gesture_value_);
 
 
 
