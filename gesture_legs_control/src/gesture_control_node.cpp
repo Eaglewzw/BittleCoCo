@@ -83,7 +83,7 @@ void GestureControlNode::gesture_control_loop()
             
             case GestureCtrlType::ThumbUp:
                 if(okay_flag){
-                    rob_.SendMotorCommand("kgdb", true);
+                    rob_.SendMotorCommand("kchr", true);
                     std::cout << "Check around.\n";
                 }else{
                     std::cout << "wait for okay gesture" << std::endl;
@@ -103,10 +103,10 @@ void GestureControlNode::gesture_control_loop()
             break;
 
 
-            // case GestureCtrlType::Awesome:
-            //     rob_.SendTask({OpenCat::Command::SIT, 2}, true);
-            //     std::cout << "Greeting action performed.\n";
-            //     break;
+            case GestureCtrlType::Awesome:
+                rob_.SendMotorCommand("kbf", true);
+                std::cout << "kbf action performed.\n";
+                break;
             
             case GestureCtrlType::Mute:
                 okay_flag = false;
@@ -117,7 +117,7 @@ void GestureControlNode::gesture_control_loop()
 
             case GestureCtrlType::Palm:
                 if(okay_flag){
-                    rob_.SendMotorCommand("khsk", true);
+                    rob_.SendMotorCommand("khi", true);
                     std::cout << "Walking forward.\n";
                 }
             break;

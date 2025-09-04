@@ -1,6 +1,6 @@
 # BittleCoCo
 
-# Skills Reference
+## Skills Reference
 ![效果图片1](./assets/image.avif "串口控制命令表")
 ![效果图片1](./assets/image.png "串口控制命令表")
 
